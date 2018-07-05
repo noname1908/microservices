@@ -15,6 +15,6 @@
 
 const Route = use('Route')
 
-Route.get('/movies', 'MovieController.getAllMovies')
-Route.get('/movies/premieres', 'MovieController.getMoviePremieres')
-Route.get('/movies/:id', 'MovieController.getMovieById')
+Route.get('/', 'MovieController.getAllMovies')
+Route.get('/premieres', 'MovieController.getMoviePremieres')
+Route.get('/:id', 'MovieController.getMovieById')

@@ -4,8 +4,10 @@ const Movie = use('App/Models/Movie')
 
 class MovieController {
   async getAllMovies ({ response }) {
-    const movies = await Movie.all()
-    response.status(200).json(movies)
+    // const movies = await Movie.all()
+    // response.status(200).json(movies)
+
+    response.send('its work!')
   }
 
   async getMoviePremieres ({ response }) {
